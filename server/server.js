@@ -4,8 +4,13 @@ const PORT = 3000;
 
 const app = express();
 
+// setting view
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 app.get('/', (req, res) => {
-    return res.send('Hello World :)');
+    console.log('Returning index');
+    return res.render('index', { name: 'Thiago' });
 });
 
 // starting server

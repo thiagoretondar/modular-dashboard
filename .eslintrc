@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+
+  "rules": {
+      "indent": [0, "tab"], // this option sets a specific tab width for your code (off by default)
+      "no-console": 0 // allow use of console (off by default in the node environment)
+  }
+}
